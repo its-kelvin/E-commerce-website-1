@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="checkout-container">
+    <h2>Checkout</h2>
+
+    <form id="checkoutForm">
+
+        <label>Full Name</label>
+        <input type="text" id="name">
+        <p class="error" id="nameError"></p>
+
+        <label>Phone Number</label>
+        <input type="text" id="phone">
+        <p class="error" id="phoneError"></p>
+
+        <label>Email</label>
+        <input type="text" id="email">
+        <p class="error" id="emailError"></p>
+
+        <label for="county">County:</label>
+        <select id="county">
+
+<option value="Mombasa">001 - Mombasa</option>
+<option value="Kwale">002 - Kwale</option>
+<option value="Kilifi">003 - Kilifi</option>
+<option value="Tana River">004 - Tana River</option>
+<option value="Lamu">005 - Lamu</option>
+<option value="Taita Taveta">006 - Taita Taveta</option>
+<option value="Garissa">007 - Garissa</option>
+<option value="Wajir">008 - Wajir</option>
+<option value="Mandera">009 - Mandera</option>
+<option value="Marsabit">010 - Marsabit</option>
+<option value="Isiolo">011 - Isiolo</option>
+<option value="Meru">012 - Meru</option>
+<option value="Tharaka-Nithi">013 - Tharaka-Nithi</option>
+<option value="Embu">014 - Embu</option>
+<option value="Kitui">015 - Kitui</option>
+<option value="Machakos">016 - Machakos</option>
+<option value="Makueni">017 - Makueni</option>
+<option value="Nyandarua">018 - Nyandarua</option>
+<option value="Nyeri">019 - Nyeri</option>
+<option value="Kirinyaga">020 - Kirinyaga</option>
+<option value="Murang'a">021 - Murang'a</option>
+<option value="Kiambu">022 - Kiambu</option>
+<option value="Turkana">023 - Turkana</option>
+<option value="West Pokot">024 - West Pokot</option>
+<option value="Samburu">025 - Samburu</option>
+<option value="Trans Nzoia">026 - Trans Nzoia</option>
+<option value="Uasin Gishu">027 - Uasin Gishu</option>
+<option value="Elgeyo-Marakwet">028 - Elgeyo-Marakwet</option>
+<option value="Nandi">029 - Nandi</option>
+<option value="Baringo">030 - Baringo</option>
+<option value="Laikipia">031 - Laikipia</option>
+<option value="Nakuru">032 - Nakuru</option>
+<option value="Narok">033 - Narok</option>
+<option value="Kajiado">034 - Kajiado</option>
+<option value="Kericho">035 - Kericho</option>
+<option value="Bomet">036 - Bomet</option>
+<option value="Kakamega">037 - Kakamega</option>
+<option value="Vihiga">038 - Vihiga</option>
+<option value="Bungoma">039 - Bungoma</option>
+<option value="Busia">040 - Busia</option>
+<option value="Siaya">041 - Siaya</option>
+<option value="Kisumu">042 - Kisumu</option>
+<option value="Homa Bay">043 - Homa Bay</option>
+<option value="Migori">044 - Migori</option>
+<option value="Kisii">045 - Kisii</option>
+<option value="Nyamira">046 - Nyamira</option>
+<option value="Nairobi">047 - Nairobi</option>
+
+</select>
+
+        <p class="error" id="countyError"></p>
+
+        <label>Town</label>
+        <input type="text" id="town">
+        <p class="error" id="townError"></p>
+
+        <label>Street Address</label>
+        <input type="text" id="street">
+        <p class="error" id="streetError"></p>
+
+        <label>Quantity</label>
+        <input type="number" id="quantity" min="1" value="1">
+        <p class="error" id="quantityError"></p>
+
+        <label>Price of Item (KSH)</label>
+        <input type="number" id="price" value="0">
+        <p class="error" id="priceError"></p>
+
+        <label>Total Amount</label>
+        <input type="number" id="totalAmount" readonly>
+
+        <label>Payment Method</label>
+        <select id="payment">
+            <option value="">Select Payment</option>
+            <option value="mpesa">Mpesa</option>
+	    <option value="airtelmoney">Airtel Money</option>
+
+        </select>
+        <p class="error" id="paymentError"></p>
+
+        <button type="button" class="btn" onclick="submitForm()">Confirm Order</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
